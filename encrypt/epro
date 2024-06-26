@@ -1,12 +1,12 @@
 #!/bin/bash
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # System Request : Debian 9+/Ubuntu 18.04+/20+
-# Develovers » GhalihxScript
-# Email      » ghalihputra8@gmail.com
-# telegram   » https://t.me/ghxlih
-# whatsapp   » wa.me/+6283834366608
+# Develovers » Darkanonc
+# Email      » darkanoncc@gmail.com
+# telegram   » https://t.me/darkanonc
+# whatsapp   » wa.me/+254706376682
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Ghalihxscript
+# Darkanonc
 
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
@@ -23,7 +23,7 @@ if test $# = 0; then
   echo  "          ${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
   echo  "          ${RED}#----------------------${NC}${GREEN}[MENU  ENCRYPTER]${NC}${RED}--------------------#${NC}"
   echo  "          ${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-  echo  "          ${RED}#${NC}            ${GREEN} USAGE : ketik enc spasi namafile${NC}             ${RED} #${NC}"
+  echo  "          ${RED}#${NC}            ${GREEN} USAGE: type enc followed by filename${NC}             ${RED} #${NC}"
   echo  "          ${YELLOW}-------------------------------------------------------------${NC}"
   echo  "          ${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
   exit 1
