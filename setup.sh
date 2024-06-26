@@ -303,7 +303,7 @@ if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
 sts="${Error}"
-fi
+
 TIMES="10"
 CHATID="1187810967"
 KEY="7038894551:AAEGvVTaKGZk4K9Gl23dDciZ3fgZEDuBOWc"
@@ -667,7 +667,7 @@ gotop_latest="$(curl -s https://api.github.com/repos/xxxserxxx/gotop/releases | 
     gotop_link="https://github.com/xxxserxxx/gotop/releases/download/v$gotop_latest/gotop_v"$gotop_latest"_linux_amd64.deb"
     curl -sL "$gotop_link" -o /tmp/gotop.deb
     dpkg -i /tmp/gotop.deb >/dev/null 2>&1
-fi
+
     
     # > Buat swap sebesar 1G
     dd if=/dev/zero of=/swapfile bs=1024 count=1048576
