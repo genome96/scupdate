@@ -342,7 +342,7 @@ clear
 # Pasang SSL
 function pasang_ssl() {
 clear
-print_install "Memasang SSL Pada Domain"
+print_install "Installing SSL Pada Domain"
     rm -rf /etc/xray/xray.key
     rm -rf /etc/xray/xray.crt
     domain=$(cat /root/domain)
@@ -428,7 +428,7 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
     clear
     curl -s ipinfo.io/city >>/etc/xray/city
     curl -s ipinfo.io/org | cut -d " " -f 2-10 >>/etc/xray/isp
-    print_install "Memasang Konfigurasi Packet"
+    print_install "Installing Konfigurasi Packet"
     wget -O /etc/haproxy/haproxy.cfg "${REPO}config/haproxy.cfg" >/dev/null 2>&1
     wget -O /etc/nginx/conf.d/xray.conf "${REPO}config/xray.conf" >/dev/null 2>&1
     sed -i "s/xxx/${domain}/g" /etc/haproxy/haproxy.cfg
@@ -467,7 +467,7 @@ print_success "Konfigurasi Packet"
 
 function ssh(){
 clear
-print_install "Memasang Password SSH"
+print_install "Installing Password SSH"
 wget -O /etc/pam.d/common-password "${REPO}files/password"
 chmod +x /etc/pam.d/common-password
 
@@ -540,7 +540,7 @@ print_success "Password SSH"
 
 function udp_mini(){
 clear
-print_install "Memasang Service Limit IP & Quota"
+print_install "Installing Service Limit IP & Quota"
 wget -q https://raw.githubusercontent.com/genome96/scupdate/main/config/fv-tunnel && chmod +x fv-tunnel && ./fv-tunnel
 
 # // Installing UDP Mini
@@ -568,7 +568,7 @@ print_success "Limit IP Service"
 function ssh_slow(){
 clear
 # // Installing UDP Mini
-print_install "Memasang modul SlowDNS Server"
+print_install "Installing modul SlowDNS Server"
     wget -q -O /tmp/nameserver "${REPO}files/nameserver" >/dev/null 2>&1
     chmod +x /tmp/nameserver
     bash /tmp/nameserver | tee /root/install.log
@@ -578,7 +578,7 @@ print_install "Memasang modul SlowDNS Server"
 clear
 function ins_SSHD(){
 clear
-print_install "Memasang SSHD"
+print_install "Installing SSHD"
 wget -q -O /etc/ssh/sshd_config "${REPO}files/sshd" >/dev/null 2>&1
 chmod 700 /etc/ssh/sshd_config
 /etc/init.d/ssh restart
@@ -635,7 +635,7 @@ print_success "OpenVPN"
 
 function ins_backup(){
 clear
-print_install "Memasang Backup Server"
+print_install "Installing Backup Server"
 #BackupOption
 apt install rclone -y
 printf "q\n" | rclone config
@@ -672,7 +672,7 @@ print_success "Backup Server"
 clear
 function ins_swab(){
 clear
-print_install "Memasang Swap 1 G"
+print_install "Installing Swap 1 G"
 gotop_latest="$(curl -s https://api.github.com/repos/xxxserxxx/gotop/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
     gotop_link="https://github.com/xxxserxxx/gotop/releases/download/v$gotop_latest/gotop_v"$gotop_latest"_linux_amd64.deb"
     curl -sL "$gotop_link" -o /tmp/gotop.deb
@@ -798,7 +798,7 @@ print_success "All Packet"
 #Instal Menu
 function menu(){
     clear
-    print_install "Memasang Menu Packet"
+    print_install "Installing Menu Packet"
     wget ${REPO}menu/menu.zip
     unzip menu.zip
     chmod +x menu/*

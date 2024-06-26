@@ -4,16 +4,16 @@ cd
 rm -rf /root/udp
 mkdir -p /root/udp
 
-# change to time GMT+3
-echo "change to time GMT+7"
+# Change to GMT+3 timezone
+echo "Changing to GMT+3 timezone"
 ln -fs /usr/share/zoneinfo/Africa/Nairobi /etc/localtime
 
-# install udp-custom
-echo "downloading udp-custom"
+# Install udp-custom
+echo "Downloading udp-custom"
 mkdir -p /root/udp && cd /root/udp && wget -q https://raw.githubusercontent.com/genome96/scupdate/main/udp/udp-custom-linux-amd64
 chmod +x /root/udp/udp-custom
 
-echo "downloading default config"
+echo "Downloading default config"
 cd /root/udp && wget -q https://raw.githubusercontent.com/genome96/scupdate/main/udp/config.json
 chmod 644 /root/udp/config.json
 
@@ -51,15 +51,15 @@ WantedBy=default.target
 EOF
 fi
 
-echo start service udp-custom
+echo "Starting udp-custom service"
 systemctl start udp-custom &>/dev/null
 
-echo enable service udp-custom
+echo "Enabling udp-custom service"
 systemctl enable udp-custom &>/dev/null
 
 rmdir /root/udp
 
 clear
 echo -e ""
-read -p "Enter To Menu"
+read -p "Press Enter to go back to the menu"
 menu
