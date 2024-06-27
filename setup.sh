@@ -1,7 +1,7 @@
 #!/bin/bash
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # System Request : Debian 9+/Ubuntu 18.04+/20+
-# Develovers » Darkanon
+# Developer » Darkanon
 # Email      » darkanoncc@gmail.com
 # telegram   » https://t.me/darkanonc
 # whatsapp   » wa.me/+254706378862
