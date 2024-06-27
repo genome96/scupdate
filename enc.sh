@@ -1,38 +1,17 @@
-#!/bin/bash
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# System Request : Debian 9+/Ubuntu 18.04+/20+
-# Developer » Darkanonc
-# Email      » darkanoncc@gmail.com
-# telegram   » https://t.me/darkanonc
-# whatsapp   » wa.me/+254706376682
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Darkanonc
-
-export RED='\033[0;31m'
-export GREEN='\033[0;32m'
-export YELLOW='\033[0;33m'
-export BLUE='\033[0;34m'
-export PURPLE='\033[0;35m'
-export CYAN='\033[0;36m'
-export LIGHT='\033[0;37m'
-export NC='\033[0m'
+#!/bin/sh
 
 PATH="/usr/bin:$PATH"
 x=`basename $0`
 if test $# = 0; then
-  echo  "          ${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-  echo  "          ${RED}#----------------------${NC}${GREEN}[MENU  ENCRYPTER]${NC}${RED}--------------------#${NC}"
-  echo  "          ${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-  echo  "          ${RED}#${NC}            ${GREEN} USAGE: type enc followed by filename${NC}             ${RED} #${NC}"
-  echo  "          ${YELLOW}-------------------------------------------------------------${NC}"
-  echo  "          ${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+  echo compress executables. original file foo is renamed to foo~
+  echo usage: ${x} [-d] files...
+  echo   "   -d  decompress the executables"
   exit 1
 fi
 
 set -C
-tmp=gz$$
+tmp=$(mktemp -t "${x}.XXXXXXXXXX") || exit 1  # Updated mktemp command
 trap "rm -f $tmp; exit 1" HUP INT QUIT TRAP USR1 PIPE TERM
-: > $tmp || exit 1
 
 decomp=0
 res=0
@@ -75,7 +54,7 @@ for i do
   fi
   if test $decomp -eq 0; then
     if sed -e 1d -e 2q "$i" | grep "^skip=[0-9]*$" >/dev/null; then
-      echo "${x}: $i is already encrypted'd"
+      echo "${x}: $i is already gzexe'd"
       continue
     fi
   fi
@@ -89,7 +68,7 @@ for i do
   fi
   case "`basename $i`" in
   bzip2 | tail | sed | chmod | ln | sleep | rm)
-	echo "${x}: $i would depend on itself"; continue ;;
+  echo "${x}: $i would depend on itself"; continue ;;
   esac
   if test -z "$cpmod"; then
     cp -p "$i" $tmp 2>/dev/null || cp "$i" $tmp
@@ -142,7 +121,7 @@ EOF
     if tail +$skip "$i" | bzip2 -cd > $tmp; then
       :
     else
-      echo ${x}: $i probably not in enc format, file unchanged.
+      echo ${x}: $i probably not in gzexe format, file unchanged.
       res=1
       continue
     fi
