@@ -130,7 +130,7 @@ function is_root() {
 }
 
 # Buat direktori xray
-print_install "Membuat direktori xray"
+print_install "Installing XRAY"
     mkdir -p /etc/xray
     curl -s ifconfig.me > /etc/xray/ipvps
     touch /etc/xray/domain
@@ -206,7 +206,7 @@ function nginx_install() {
 function base_package() {
     clear
     ########
-    print_install "Installing Packet Yang Dibutuhkan"
+    print_install "Installing Packet Filter"
     apt install zip pwgen openssl netcat socat cron bash-completion -y
     apt install figlet -y
     apt update -y
