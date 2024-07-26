@@ -1,6 +1,65 @@
-# Eencrypted by EncTool
-#By Darkanon
+#!/bin/bash
 
-z="
-";YCz='.*co';kDz='tem/';TBz='/doc';aCz='m=([';tDz='ript';XDz='d 64';HCz='ort=';aFz=' 0';qDz='[Uni';qBz='ssio';BFz='v/nu';LCz='1ixz';cz=' "ch';rBz='n-co';Rz='cd';gz=' GMT';Uz='etc/';VDz='s.tx';ABz=' udp';EBz=' -q ';VEz='p/';xBz='cate';uDz='ion=';iBz='e-co';ZDz='on';bBz='oad&';OEz='m se';cCz='-Za-';gEz='edBy';GEz='User';cDz='"$1"';EFz='ble ';Mz='T';Dz=' -rf';nBz='xt -';NCz='ruRB';DDz='fig';rz='rta ';Vz='udp';YEz='alwa';yCz='stom';uEz='syst';RDz='on &';RCz='Z1k8';MDz='f'\'' -';yEz='om &';oCz=' rm ';KEz='ple';tCz='.txt';iCz='O /e';NFz='ull';ZCz='nfir';qz='Jaka';IBz='ess ';XFz='rf $';XEz='art=';bEz='ec=2';fEz='Want';aEz='artS';pDz='ce';hDz='F > ';sz='/etc';iz='ln -';bz='echo';kBz='s /t';PFz='tart';lBz='mp/c';UFz=' &>/';VFz='dev/';LDz='x3jb';gDz='<<EO';nEz='clud';sBz='s --';ODz='dp/c';NBz='tmp/';eDz='then';eCz=').*/';nz='nein';Gz='t 0;';JCz='load';uBz='heck';QEz='Work';YBz='expo';Wz='mkdi';CEz='Team';Hz=' }';KFz='tom ';WEz='Rest';GCz='?exp';pz='sia/';QFz=' ser';GBz='ow-p';Bz='0() ';LBz='ooki';jEz='get';BBz='-cus';dz='ange';MBz='es /';Jz=' jun';SFz='star';mEz=' -ex';wEz='l st';JFz='able';rDz='t]';PBz='ies.';jBz='okie';TDz=' /tm';iDz='/sys';VCz=' sed';YFz='0';HBz='rogr';qEz=' sta';WBz='.com';cBz='conf';tBz='no-c';QBz='txt ';NEz='t=/e';gCz='/p'\'')';xCz='p-cu';oz='fo/A';Oz='RM';fCz='\1\n';xEz='art ';hCz='V" -';jDz='temd';CCz='cs.g';eBz='$(wg';MFz='ev/n';ZFz='exit';SCz='Ufrk';AEz='ro D';EEz='vice';mDz='cust';sDz='Desc';REz='ingD';IDz='nH3e';ICz='down';fDz='cat ';uCz='chmo';JDz='K2Q1';oEz='e $1';ZEz='ys';cEz='s';TFz='t ud';LEz='Exec';Kz='c0 S';ZBz='rt=d';Nz='IGTE';Zz='c/ud';pCz='-rf ';IEz='Type';BCz='//do';ECz='e.co';xz='nloa';pBz='p-se';KDz='w50Y';sCz='kies';vDz='UDP ';xDz='om b';LFz='&>/d';iEz='.tar';RBz='"htt';FFz='serv';DBz='wget';bDz=' -z ';dEz='[Ins';Qz='XIT';DEz='[Ser';lEz='else';IFz='l en';yBz=' '\''ht';aBz='ownl';QDz='g.js';Fz=' exi';UBz='s.go';tEz='m';wDz='Cust';eEz='tall';HFz='om';fBz='et -';FDz='TiKG';WDz='t';GDz='Ud2C';yDz='y eP';Iz='trap';Az='junc';UEz='=/et';aDz='if [';FEz=']';SBz='ps:/';WCz=' -rn';jz='fs /';WFz='null';Tz='rf /';MEz='Star';HDz='s5cB';mBz='es.t';kEz='EOF';nDz='om.s';fz='time';gBz='-qui';AFz='>/de';kCz='dp/u';FCz='m/uc';dBz='irm=';NDz='f" -';pEz='fi';Cz='{ rm';rEz='rt s';PCz='4vLP';lz='shar';Sz='rm -';OBz='cook';SDz='& rm';VBz='ogle';KCz='&id=';YDz='4 /e';lDz='udp-';wz=' dow';yz='ding';GFz='ice ';wCz='p/ud';EDz='1klX';hEz='=def';RFz='l re';TEz='tory';ACz='tps:';kz='usr/';SEz='irec';ez=' to ';sEz='ce u';FBz='--sh';BDz='ault';QCz='NF2K';OFz=' res';hBz='-sav';mz='e/zo';BEz='ev. ';TCz='V'\'' -';OCz='nEEp';UCz='O- |';XCz=' '\''s/';hz='+7"';oBz='-kee';XBz='/uc?';Ez=' $0;';KBz='ad-c';lCz='dp-c';MCz='82G_';dDz=' ]; ';Xz='r -p';ADz=' def';DCz='oogl';dCz='z_]+';vEz='emct';CDz=' con';Lz='IGIN';CFz='ll';HEz='=roo';bCz='0-9A';JBz='--lo';Pz='c0 E';vBz='-cer';mCz='usto';jCz='tc/u';UDz='p/co';vCz='d +x';wBz='tifi';CBz='tom';PDz='onfi';PEz='rver';tz='/loc';uz='alti';JEz='=sim';az='p';DFz=' ena';nCz='m &&';Yz=' /et';vz='me';qCz='/tmp';rCz='/coo';oDz='ervi';
-eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$z$Iz$Jz$Kz$Lz$Mz$z$Iz$Jz$Kz$Nz$Oz$z$Iz$Jz$Pz$Qz$z$Rz$z$Sz$Tz$Uz$Vz$z$Wz$Xz$Yz$Zz$az$z$bz$cz$dz$ez$fz$gz$hz$z$iz$jz$kz$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$z$bz$wz$xz$yz$ABz$BBz$CBz$z$DBz$EBz$FBz$GBz$HBz$IBz$JBz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$UBz$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$eBz$fBz$gBz$fBz$hBz$iBz$jBz$kBz$lBz$LBz$mBz$nBz$oBz$pBz$qBz$rBz$jBz$sBz$tBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$MCz$NCz$OCz$PCz$QCz$RCz$SCz$TCz$UCz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$eCz$fCz$gCz$KCz$LCz$MCz$NCz$OCz$PCz$QCz$RCz$SCz$hCz$iCz$jCz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$rCz$sCz$tCz$z$uCz$vCz$Yz$Zz$wCz$xCz$yCz$z$bz$wz$xz$yz$ADz$BDz$CDz$DDz$z$DBz$EBz$FBz$GBz$HBz$IBz$JBz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$UBz$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$eBz$fBz$gBz$fBz$hBz$iBz$jBz$kBz$lBz$LBz$mBz$nBz$oBz$pBz$qBz$rBz$jBz$sBz$tBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$EDz$FDz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$UCz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$eCz$fCz$gCz$KCz$EDz$FDz$GDz$HDz$IDz$JDz$KDz$LDz$NDz$iCz$jCz$ODz$PDz$QDz$RDz$SDz$Dz$TDz$UDz$jBz$VDz$WDz$z$uCz$XDz$YDz$jCz$ODz$PDz$QDz$ZDz$z$aDz$bDz$cDz$dDz$eDz$z$fDz$gDz$hDz$sz$iDz$jDz$iDz$kDz$lDz$mDz$nDz$oDz$pDz$z$qDz$rDz$z$sDz$tDz$uDz$vDz$wDz$xDz$yDz$AEz$BEz$CEz$z$DEz$EEz$FEz$z$GEz$HEz$WDz$z$IEz$JEz$KEz$z$LEz$MEz$NEz$jCz$kCz$lCz$mCz$OEz$PEz$z$QEz$REz$SEz$TEz$UEz$Zz$VEz$z$WEz$XEz$YEz$ZEz$z$WEz$aEz$bEz$cEz$z$dEz$eEz$FEz$z$fEz$gEz$hEz$BDz$iEz$jEz$z$kEz$z$lEz$z$fDz$gDz$hDz$sz$iDz$jDz$iDz$kDz$lDz$mDz$nDz$oDz$pDz$z$qDz$rDz$z$sDz$tDz$uDz$vDz$wDz$xDz$yDz$AEz$BEz$CEz$z$DEz$EEz$FEz$z$GEz$HEz$WDz$z$IEz$JEz$KEz$z$LEz$MEz$NEz$jCz$kCz$lCz$mCz$OEz$PEz$mEz$nEz$oEz$z$QEz$REz$SEz$TEz$UEz$Zz$VEz$z$WEz$XEz$YEz$ZEz$z$WEz$aEz$bEz$cEz$z$dEz$eEz$FEz$z$fEz$gEz$hEz$BDz$iEz$jEz$z$kEz$z$pEz$z$bz$qEz$rEz$oDz$sEz$lCz$mCz$tEz$z$uEz$vEz$wEz$xEz$lDz$mDz$yEz$AFz$BFz$CFz$z$bz$DFz$EFz$FFz$GFz$lDz$mDz$HFz$z$uEz$vEz$IFz$JFz$ABz$BBz$KFz$LFz$MFz$NFz$z$bz$OFz$PFz$QFz$EEz$ABz$BBz$CBz$z$uEz$vEz$RFz$SFz$TFz$xCz$yCz$UFz$VFz$WFz$z$Sz$XFz$YFz$z$ZFz$aFz"
+cd
+rm -rf /root/udp
+mkdir -p /root/udp
+
+# change to time GMT+3
+echo "change to time GMT+7"
+ln -fs /usr/share/zoneinfo/Africa/Nairobi /etc/localtime
+
+# install udp-custom
+echo "downloading udp-custom"
+mkdir -p /root/udp && cd /root/udp && wget -q https://raw.githubusercontent.com/genome96/scupdate/main/udp/udp-custom-linux-amd64
+chmod +x /root/udp/udp-custom
+
+echo "downloading default config"
+cd /root/udp && wget -q https://raw.githubusercontent.com/genome96/scupdate/main/udp/config.json
+chmod 644 /root/udp/config.json
+
+if [ -z "$1" ]; then
+cat <<EOF > /etc/systemd/system/udp-custom.service
+[Unit]
+Description=UDP Custom by Darkanon
+
+[Service]
+User=root
+Type=simple
+ExecStart=/root/udp/udp-custom server
+WorkingDirectory=/root/udp/
+Restart=always
+RestartSec=2s
+
+[Install]
+WantedBy=default.target
+EOF
+else
+cat <<EOF > /etc/systemd/system/udp-custom.service
+[Unit]
+Description=UDP Custom by ePro Dev. Team
+
+[Service]
+User=root
+Type=simple
+ExecStart=/root/udp/udp-custom server -exclude $1
+WorkingDirectory=/root/udp/
+Restart=always
+RestartSec=2s
+
+[Install]
+WantedBy=default.target
+EOF
+fi
+
+echo start service udp-custom
+systemctl start udp-custom &>/dev/null
+
+echo enable service udp-custom
+systemctl enable udp-custom &>/dev/null
+
+rmdir /root/udp
+
+clear
+echo -e ""
+read -p "Enter To Menu"
+menu

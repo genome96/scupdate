@@ -2,8 +2,9 @@
 
 Enter the command below to install
 
-````
-apt update && apt upgrade -y && apt install -y bzip2 gzip wget init dos2unix coreutils openssl git screen curl jq && wget -q https://raw.githubusercontent.com/genome96/scupdate/main/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh```
+```
+apt update && apt upgrade -y && apt install -y bzip2 gzip wget init coreutils openssl git screen curl jq && wget -q https://raw.githubusercontent.com/genome96/scupdate/main/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh
+```
 
 ## IP PERMISSION AUTOSCRIPT SPECIAL MEMBER!
 
@@ -14,10 +15,8 @@ WhatsApp Darkanon:
 
 Enter the command below if there is information about Script updates for upcoming versions
 
-````
-
-wget -q https://raw.githubusercontent.com/optimus-glitch/scupdate/main/update.sh && chmod +x update.sh && ./update.sh
-
+```
+wget -q https://raw.githubusercontent.com/genome96/scupdate/main/update.sh && chmod +x update.sh && ./update.sh
 ```
 
 ## TESTED ON OS
@@ -49,7 +48,6 @@ wget -q https://raw.githubusercontent.com/optimus-glitch/scupdate/main/update.sh
 ## PORT INFO
 
 ```
-
 - OpenSSH: 443, 80, 22
 - Dropbear: 443, 109, 143
 - Dropbear Websocket SSL: 443, 109
@@ -75,20 +73,17 @@ wget -q https://raw.githubusercontent.com/optimus-glitch/scupdate/main/update.sh
 - Trojan WS: 443
 - Shadowsocks Ws: 443
 - Haproxy Loadbalancer: 443, 80
-
 ```
 
 ## CLOUDFLARE SETTING
 
 ```
-
 - SSL/TLS: FULL
 - SSL/TLS Recommender: OFF
 - GRPC: ON
 - WEBSOCKET: ON
 - Always Use HTTPS: OFF
 - UNDER ATTACK MODE: OFF
-
 ```
 
 ## SCRIPT MENU DISPLAY
@@ -112,4 +107,3 @@ Whatsapp & Telegram:
 Group Chat:
 <br><br><a href="https://chat.whatsapp.com/ENzsH813IKzLbARWtB6Ysl" target="_blank"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Whatsapp&label=Group 1&message=Click%20Here&color=#006400">
 <br><br><a href="https://chat.whatsapp.com/H3hhaEWqQkR6PhbeCMTiI1" target="_blank"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Whatsapp&label=Group 2&message=Click%20Here&color=#006400">
-```
