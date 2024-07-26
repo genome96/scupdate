@@ -3,7 +3,7 @@
 Enter the command below to install
 
 ```
-apt update && apt upgrade -y && apt install -y bzip2 gzip wget init coreutils openssl git screen curl jq && wget -q https://raw.githubusercontent.com/genome96/scupdate/main/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh
+apt update -y && apt upgrade -y apt install dos2unix -y && wget -q https://raw.githubusercontent.com/optimus-glitch/scupdate/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 
 ## IP PERMISSION AUTOSCRIPT SPECIAL MEMBER!
@@ -16,7 +16,7 @@ WhatsApp Darkanon:
 Enter the command below if there is information about Script updates for upcoming versions
 
 ```
-wget -q https://raw.githubusercontent.com/genome96/scupdate/main/update.sh && chmod +x update.sh && ./update.sh
+wget -q https://raw.githubusercontent.com/optimus-glitch/scupdate/main/update.sh && chmod +x update.sh && ./update.sh
 ```
 
 ## TESTED ON OS

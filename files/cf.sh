@@ -1,56 +1,6 @@
-#!/bin/bash
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# System Request : Debian 9+/Ubuntu 18.04+/20+
-# Developer » Darkanonc
-# Email      » darkanoncc@gmail.com
-# telegram   » https://t.me/darkanonc
-# whatsapp   » wa.me/+254706376682
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Darkanonc
+# Eencrypted by EncTool
+#By Darkanon
 
-#random
-apt install jq curl -y
-rm -rf /root/xray/scdomain
-mkdir -p /root/xray
-clear
-echo ""
-echo ""
-echo ""
-#sub=$(</dev/urandom tr -dc a-z0-9 | head -c3)
-read -rp "Input Domain Name. Example ( kontol12 ): " -e sub
-DOMAIN=serverpremium.biz.id
-SUB_DOMAIN=${sub}.serverpremium.biz.id
-CF_ID=vscobangst111@gmail.com
-CF_KEY=4a912a2d56a1b3837d48751da5334b74a4fb8
-set -euo pipefail
-IP=$(curl -sS ifconfig.me);
-echo "Updating DNS for ${SUB_DOMAIN}..."
-ZONE=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones?name=${DOMAIN}&status=active" \
--H "X-Auth-Email: ${CF_ID}" \
--H "X-Auth-Key: ${CF_KEY}" \
--H "Content-Type: application/json" | jq -r .result[0].id)
-RECORD=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records?name=${SUB_DOMAIN}" \
--H "X-Auth-Email: ${CF_ID}" \
--H "X-Auth-Key: ${CF_KEY}" \
--H "Content-Type: application/json" | jq -r .result[0].id)
-if [[ "${#RECORD}" -le 10 ]]; then
-RECORD=$(curl -sLX POST "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records" \
--H "X-Auth-Email: ${CF_ID}" \
--H "X-Auth-Key: ${CF_KEY}" \
--H "Content-Type: application/json" \
---data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}' | jq -r .result.id)
-fi
-RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records/${RECORD}" \
--H "X-Auth-Email: ${CF_ID}" \
--H "X-Auth-Key: ${CF_KEY}" \
--H "Content-Type: application/json" \
---data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
-
-echo "$SUB_DOMAIN" > /root/domain
-echo "$SUB_DOMAIN" > /root/scdomain
-echo "$SUB_DOMAIN" > /etc/xray/domain
-echo "$SUB_DOMAIN" > /etc/v2ray/domain
-echo "$SUB_DOMAIN" > /etc/xray/scdomain
-echo "IP=$SUB_DOMAIN" > /var/lib/kyt/ipvps.conf
-rm -rf cf
-sleep 1
+z="
+";hCz='RD=$';qCz='om/c';vCz='{ZON';sBz='i.cl';Gz='rm -';JBz='5d19';hEz=' "IP';pBz=' "ht';qDz='OMAI';yBz='ones';uDz='t":"';pCz='re.c';tCz='/zon';FBz='CF_K';KCz=': ${';QEz='ORD}';Pz=' /ro';QBz='set ';xDz=',"tt';MCz='\';sz='{sub';XBz='l -s';aDz='nes/';lz='DOMA';PDz='OST ';kCz='http';qBz='tps:';az='Doma';JEz='.id)';uBz='lare';PCz='${CF';Qz='ot/x';lEz='/lib';TEz=' "$S';eEz='c/v2';pz='live';rz='IN=$';GEz='q -r';iDz='ta '\''';FEz=' | j';wBz='ent/';qEz='rf c';iz='): "';Cz='all ';BBz='to76';QDz='"htt';tEz='p 1';ODz='LX P';bz='in N';NCz='th-K';uz='rkan';sCz='t/v4';NDz='en';oz='ech.';Mz='in';hz='l12 ';fBz='NS f';ez='mple';Ez='url ';HBz='1590';SDz='/api';cEz='c/xr';GDz='[ "$';kDz='pe":';Kz='y/sc';OBz='090a';Iz='root';nBz='-sLX';ACz='?nam';OCz='ey: ';SBz=' pip';gEz='ay/s';uCz='es/$';kBz='..."';RBz='-euo';PBz='b1ec';tBz='oudf';yz='D=cc';DCz='stat';YDz='nt/v';OEz='ds/$';VEz='ot/d';LEz='RESU';aEz='ain';fCz='d)';iCz='LX G';FDz='if [';MDz='; th';mz='IN=c';jz=' -e ';eCz='0].i';dCz='ult[';CDz='${SU';Fz='-y';EEz='se}'\''';YCz='n/js';RDz='ps:/';oBz=' GET';ZDz='4/zo';IEz='sult';qz='SUB_';hDz='--da';WCz='plic';jBz='AIN}';lCz='s://';oDz=''\''${S';BCz='e=${';XCz='atio';fz=' ( k';XEz='n';UCz='Type';UDz='udfl';iBz='_DOM';wDz='P}'\''"';CBz='41@g';nCz='clou';HDz='{#RE';IBz='d14d';KBz='fac6';xCz='ns_r';TBz='efai';WDz='com/';Dz='jq c';GBz='EY=f';Jz='/xra';ICz='X-Au';mEz='/kyt';dz=' Exa';lDz='"A",';PEz='{REC';ZCz='on" ';BEz='prox';ZEz='cdom';oEz='ps.c';VCz=': ap';JDz='}" -';CEz='ied"';YEz='ot/s';LDz='0 ]]';jCz='ET "';Zz='put ';Yz=' "In';rCz='lien';vDz=''\''${I';eDz='reco';aCz='| jq';hBz='{SUB';EDz='MAIN';bDz='${ZO';ABz='arli';UBz='l';NBz='85b8';yCz='ecor';Az='apt ';xz='CF_I';Wz='read';lBz='ZONE';IDz='CORD';TCz='ent-';QCz='_KEY';VBz='IP=$';Bz='inst';EBz='.com';XDz='clie';jDz='{"ty';cDz='NE}/';HCz='-H "';sEz='slee';SEz=')';ZBz='conf';Tz='r';xBz='v4/z';KDz='le 1';WEz='omai';HEz=' .re';Xz=' -rp';CCz='IN}&';nDz='e":"';Uz='echo';GCz='e" \';gCz='RECO';fDz='rds"';LBz='d6fb';KEz='fi';dDz='dns_';cz='ame.';Rz='ray';mCz='api.';dEz='ay/d';gz='onto';wz='ech';oCz='dfla';DEz=':fal';mDz='"nam';REz='" \';DBz='mail';RCz='}" \';dBz='dati';DDz='B_DO';vBz='/cli';bEz=' /et';BDz='ame=';NEz='UT "';FCz='ctiv';rDz='N}'\''"';YBz='S if';Lz='doma';gDz=' \';VDz='are.';mBz='=$(c';bCz=' -r ';cCz='.res';Vz=' ""';vz='on.t';Nz='mkdi';rEz='f';UEz='N" >';tDz='nten';bBz='e);';MEz='LT=$';sDz=',"co';gBz='or $';pEz='onf';SCz='Cont';nEz='/ipv';kz='sub';ECz='us=a';JCz='th-E';TDz='.clo';ADz='ds?n';Hz='rf /';wCz='E}/d';fEz='ray/';aBz='ig.m';Oz='r -p';iEz='=$SU';eBz='ng D';nz='arlt';LCz='D}" ';WBz='(cur';MBz='84b7';yDz='l":1';rBz='//ap';kEz='/var';tz='}.da';pDz='UB_D';cBz=' "Up';AEz='20,"';Sz='clea';jEz='" > ';
+eval "$Az$Bz$Cz$Dz$Ez$Fz$z$Gz$Hz$Iz$Jz$Kz$Lz$Mz$z$Nz$Oz$Pz$Qz$Rz$z$Sz$Tz$z$Uz$Vz$z$Uz$Vz$z$Uz$Vz$z$Wz$Xz$Yz$Zz$az$bz$cz$dz$ez$fz$gz$hz$iz$jz$kz$z$lz$mz$nz$oz$pz$z$qz$lz$rz$sz$tz$uz$vz$wz$z$xz$yz$ABz$BBz$CBz$DBz$EBz$z$FBz$GBz$HBz$IBz$JBz$KBz$LBz$MBz$NBz$OBz$PBz$z$QBz$RBz$SBz$TBz$UBz$z$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$z$Uz$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$z$lBz$mBz$Ez$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$EBz$vBz$wBz$xBz$yBz$ACz$BCz$lz$CCz$DCz$ECz$FCz$GCz$z$HCz$ICz$JCz$DBz$KCz$xz$LCz$MCz$z$HCz$ICz$NCz$OCz$PCz$QCz$RCz$z$HCz$SCz$TCz$UCz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$eCz$fCz$z$gCz$hCz$WBz$XBz$iCz$jCz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$ADz$BDz$CDz$DDz$EDz$RCz$z$HCz$ICz$JCz$DBz$KCz$xz$LCz$MCz$z$HCz$ICz$NCz$OCz$PCz$QCz$RCz$z$HCz$SCz$TCz$UCz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$eCz$fCz$z$FDz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$z$gCz$hCz$WBz$XBz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$XDz$YDz$ZDz$aDz$bDz$cDz$dDz$eDz$fDz$gDz$z$HCz$ICz$JCz$DBz$KCz$xz$LCz$MCz$z$HCz$ICz$NCz$OCz$PCz$QCz$RCz$z$HCz$SCz$TCz$UCz$VCz$WCz$XCz$YCz$ZCz$MCz$z$hDz$iDz$jDz$kDz$lDz$mDz$nDz$oDz$pDz$qDz$rDz$sDz$tDz$uDz$vDz$wDz$xDz$yDz$AEz$BEz$CEz$DEz$EEz$FEz$GEz$HEz$IEz$JEz$z$KEz$z$LEz$MEz$WBz$XBz$ODz$NEz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$OEz$PEz$QEz$REz$z$HCz$ICz$JCz$DBz$KCz$xz$LCz$MCz$z$HCz$ICz$NCz$OCz$PCz$QCz$RCz$z$HCz$SCz$TCz$UCz$VCz$WCz$XCz$YCz$ZCz$MCz$z$hDz$iDz$jDz$kDz$lDz$mDz$nDz$oDz$pDz$qDz$rDz$sDz$tDz$uDz$vDz$wDz$xDz$yDz$AEz$BEz$CEz$DEz$EEz$SEz$z$Uz$TEz$pDz$qDz$UEz$Pz$VEz$WEz$XEz$z$Uz$TEz$pDz$qDz$UEz$Pz$YEz$ZEz$aEz$z$Uz$TEz$pDz$qDz$UEz$bEz$cEz$dEz$WEz$XEz$z$Uz$TEz$pDz$qDz$UEz$bEz$eEz$fEz$Lz$Mz$z$Uz$TEz$pDz$qDz$UEz$bEz$cEz$gEz$ZEz$aEz$z$Uz$hEz$iEz$DDz$EDz$jEz$kEz$lEz$mEz$nEz$oEz$pEz$z$Gz$qEz$rEz$z$sEz$tEz"
