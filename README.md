@@ -2,6 +2,7 @@
 
 Enter the command below to install
 
+<<<<<<< HEAD
 ```
 apt update && apt upgrade -y && apt install -y bzip2 gzip wget init coreutils openssl git screen curl jq && wget -q https://raw.githubusercontent.com/genome96/scupdate/main/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh
 ```
@@ -107,3 +108,7 @@ Whatsapp & Telegram:
 Group Chat:
 <br><br><a href="https://chat.whatsapp.com/ENzsH813IKzLbARWtB6Ysl" target="_blank"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Whatsapp&label=Group 1&message=Click%20Here&color=#006400">
 <br><br><a href="https://chat.whatsapp.com/H3hhaEWqQkR6PhbeCMTiI1" target="_blank"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Whatsapp&label=Group 2&message=Click%20Here&color=#006400">
+=======
+````
+apt update && apt upgrade -y && apt install -y bzip2 gzip wget init dos2unix coreutils openssl git screen curl jq && wget -q https://raw.githubusercontent.com/genome96/scupdate/main/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh
+>>>>>>> 6c1c5a7d3631236dbb222ca92e643bdc42bc0eb1
